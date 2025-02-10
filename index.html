@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MERYA DESIGNS</title>
     <style>
+        /* Grundlegendes Layout */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -12,8 +13,12 @@
             background-color: #FAF3E0;
             color: #2E604A;
             display: flex;
+            min-height: 100vh;
             flex-direction: row;
+            flex-wrap: nowrap;
         }
+
+        /* Header */
         header {
             background-color: #2E604A;
             color: white;
@@ -25,14 +30,17 @@
         }
         header h1 {
             margin: 0;
+            position: relative;
         }
         header::after {
             content: "🦋";
             position: absolute;
-            top: 0;
-            right: 10px;
-            font-size: 20px;
+            top: -20px;
+            left: calc(100% - 75px); /* Positioniere den Schmetterling über dem 'S' */
+            font-size: 24px;
         }
+
+        /* Navigation */
         nav {
             display: flex;
             flex-direction: column;
@@ -41,6 +49,10 @@
             padding: 15px;
             width: 200px;
             gap: 20px;
+            position: fixed;
+            height: 100%;
+            top: 0;
+            left: 0;
         }
         nav a {
             color: white;
@@ -52,11 +64,19 @@
         nav a:hover {
             text-decoration: underline;
         }
+
+        /* Hauptinhalt */
+        .content {
+            margin-left: 220px; /* Platz für die Navigation */
+            flex: 1;
+            padding: 20px;
+        }
         section {
             padding: 50px 20px;
             text-align: center;
-            flex: 3;
         }
+
+        /* Shop Layout */
         .shop-container {
             display: flex;
             justify-content: center;
@@ -88,14 +108,34 @@
         .shop-item button:hover {
             background-color: #3D7A5F;
         }
+
+        /* Footer */
         footer {
             background-color: #2E604A;
             color: white;
             text-align: center;
             padding: 15px;
-            position: absolute;
+            position: relative;
             bottom: 0;
             width: 100%;
+            margin-top: auto; /* Sichert den Footer unten */
+        }
+
+        /* Responsives Design */
+        @media screen and (max-width: 768px) {
+            nav {
+                width: 100%;
+                height: auto;
+                position: static;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .content {
+                margin-left: 0;
+            }
+            header {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
@@ -108,7 +148,7 @@
         <a href="#kontakt">Kontakt</a>
     </nav>
 
-    <div style="flex: 1; display: flex; flex-direction: column;">
+    <div class="content">
         <header>
             <h1>MERYA DESIGNS</h1>
         </header>
@@ -145,9 +185,9 @@
             <p>Email: meryadesigns@gmail.de</p>
         </section>
     </div>
+
     <footer>
         <p>&copy; 2025 MERYA DESIGNS. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
 </html>
-
