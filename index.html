@@ -4,54 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MERYA DESIGNS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> <!-- Elegante Schreibschrift -->
+
+    <!-- Schriftarten hinzufügen -->
+    <link href="https://fonts.googleapis.com/css2?family=Baskerville&family=Kannada+MN&display=swap" rel="stylesheet">
+
     <style>
         /* Grundlegendes Layout */
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Kannada MN', sans-serif; /* Standard Schriftart für normalen Text */
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0; /* Beige Hintergrund */
-            color: #4a4a4a;
+            background-color: #F7F3EB; /* Pastellbeige Hintergrund */
+            color: #4A4A4A;
             display: flex;
+            flex-direction: column;
             min-height: 100vh;
-            flex-direction: row;
-            flex-wrap: nowrap;
         }
 
-        /* Header ohne grünen Kasten */
+        /* Header mit Schriftart Baskerville */
         header {
             color: #5B4D38; /* Dunkles Braun für Eleganz */
-            padding: 30px;
+            padding: 40px 20px;
             text-align: center;
-            font-size: 36px;
-            font-family: 'Great Vibes', cursive; /* Elegante, verbundene Schreibschrift */
-            flex: 1;
+            font-size: 48px;
+            font-family: 'Baskerville', serif; /* Elegante und klassische Schriftart für die Überschrift */
+            flex: 0;
+            margin-top: 30px;
         }
         header h1 {
             margin: 0;
+            text-transform: uppercase; /* Alle Buchstaben in Großbuchstaben */
         }
 
         /* Navigation */
         nav {
             display: flex;
-            flex-direction: column;
             justify-content: flex-start;
             background-color: #F1E1D7; /* Pastellbeige */
             padding: 15px;
-            width: 200px;
-            gap: 20px;
-            position: fixed;
-            height: 100%;
-            top: 0;
-            left: 0;
-            box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         nav a {
             color: #6A4E98; /* Lila Akzentfarbe */
             text-decoration: none;
             font-size: 18px;
             font-weight: 500;
+            margin-right: 20px;
             transition: 0.3s;
         }
         nav a:hover {
@@ -60,14 +59,14 @@
 
         /* Hauptinhalt */
         .content {
-            margin-left: 220px; /* Platz für die Navigation */
-            flex: 1;
             padding: 20px;
-            background-color: #F9F6F1; /* Sehr zartes Beige für den Content */
+            flex: 1;
+            background-color: #FFF9F1; /* Sehr zartes Beige für den Content */
         }
         section {
-            padding: 50px 20px;
+            padding: 40px 20px;
             text-align: center;
+            margin-bottom: 40px;
         }
 
         /* Shop Layout */
@@ -75,6 +74,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
+            flex-wrap: wrap;
         }
         .shop-item {
             background: #FFFFFF;
@@ -111,10 +111,31 @@
             color: #6A4E98; /* Lila Akzentfarbe */
             text-align: center;
             padding: 15px;
-            position: relative;
+            position: fixed;
             bottom: 0;
             width: 100%;
-            margin-top: auto; /* Sichert den Footer unten */
+            margin-top: auto;
+            font-family: 'Kannada MN', sans-serif; /* Schriftart für den Footer */
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Responsives Design */
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            header {
+                font-size: 36px;
+            }
+            .shop-container {
+                flex-direction: column;
+                align-items: center;
+            }
         }
 
         /* Blumen-Emojis im Text (nur bei Willkommen) */
@@ -123,25 +144,10 @@
             margin-right: 5px;
         }
 
-        /* Responsives Design */
-        @media screen and (max-width: 768px) {
-            nav {
-                width: 100%;
-                height: auto;
-                position: static;
-                flex-direction: row;
-                justify-content: center;
-            }
-            .content {
-                margin-left: 0;
-            }
-            header {
-                font-size: 28px;
-            }
-        }
     </style>
 </head>
 <body>
+
     <nav>
         <a href="#start">Startseite</a>
         <a href="#leistungen">Leistungen</a>
@@ -156,7 +162,7 @@
         </header>
 
         <section id="start">
-            <h2>Willkommen bei MERYA DESIGNS 🌸</h2> <!-- Blumen Emojis in rot und pink -->
+            <h2>Willkommen bei MERYA DESIGNS 🌸</h2> <!-- Blumen Emoji -->
             <p>Individuelle Hochzeitsgastgeschenke mit Eleganz und Stil.</p>
         </section>
         <section id="leistungen">
@@ -191,5 +197,6 @@
     <footer>
         <p>&copy; 2025 MERYA DESIGNS. Alle Rechte vorbehalten.</p>
     </footer>
+
 </body>
 </html>
