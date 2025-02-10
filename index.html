@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MERYA DESIGNS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> <!-- Verspielte Schriftart für die Überschrift -->
     <style>
         /* Grundlegendes Layout */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #FAF3E0;
-            color: #2E604A;
+            background-color: #f0f0f0; /* Beige Hintergrund */
+            color: #4a4a4a;
             display: flex;
             min-height: 100vh;
             flex-direction: row;
@@ -20,24 +21,16 @@
 
         /* Header */
         header {
-            background-color: #2E604A;
-            color: white;
-            padding: 20px;
+            background-color: #A9D8B3; /* Pastellgrün */
+            color: #5B4D38; /* Dunkles Braun für Eleganz */
+            padding: 30px;
             text-align: center;
-            font-size: 30px;
+            font-size: 36px;
+            font-family: 'Dancing Script', cursive; /* Verspielte Schreibschrift */
             flex: 1;
-            position: relative;
         }
         header h1 {
             margin: 0;
-            position: relative;
-        }
-        header::after {
-            content: "🦋";
-            position: absolute;
-            top: -20px;
-            left: calc(100% - 75px); /* Positioniere den Schmetterling über dem 'S' */
-            font-size: 24px;
         }
 
         /* Navigation */
@@ -45,7 +38,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            background-color: #A3B18A;
+            background-color: #F1E1D7; /* Pastellbeige */
             padding: 15px;
             width: 200px;
             gap: 20px;
@@ -53,9 +46,10 @@
             height: 100%;
             top: 0;
             left: 0;
+            box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.1);
         }
         nav a {
-            color: white;
+            color: #5B4D38; /* Dunkles Braun für Lesbarkeit */
             text-decoration: none;
             font-size: 18px;
             font-weight: 500;
@@ -70,6 +64,7 @@
             margin-left: 220px; /* Platz für die Navigation */
             flex: 1;
             padding: 20px;
+            background-color: #F9F6F1; /* Sehr zartes Beige für den Content */
         }
         section {
             padding: 50px 20px;
@@ -83,11 +78,12 @@
             gap: 20px;
         }
         .shop-item {
-            background: white;
+            background: #FFFFFF;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             width: 250px;
+            text-align: center;
         }
         .shop-item h3 {
             margin-bottom: 10px;
@@ -97,28 +93,35 @@
             color: #555;
         }
         .shop-item button {
-            background-color: #2E604A;
-            color: white;
+            background-color: #A9D8B3; /* Pastellgrün */
+            color: #fff;
             border: none;
             padding: 10px 15px;
             border-radius: 5px;
             cursor: pointer;
             transition: 0.3s;
+            font-weight: bold;
         }
         .shop-item button:hover {
-            background-color: #3D7A5F;
+            background-color: #7CBB91; /* Etwas dunkleres Pastellgrün */
         }
 
         /* Footer */
         footer {
-            background-color: #2E604A;
-            color: white;
+            background-color: #A9D8B3; /* Pastellgrün */
+            color: #5B4D38; /* Dunkles Braun */
             text-align: center;
             padding: 15px;
             position: relative;
             bottom: 0;
             width: 100%;
             margin-top: auto; /* Sichert den Footer unten */
+        }
+
+        /* Blumen-Emojis im Text */
+        .emoji {
+            font-size: 28px;
+            margin-right: 5px;
         }
 
         /* Responsives Design */
@@ -134,7 +137,7 @@
                 margin-left: 0;
             }
             header {
-                font-size: 24px;
+                font-size: 28px;
             }
         }
     </style>
@@ -154,34 +157,34 @@
         </header>
 
         <section id="start">
-            <h2>Willkommen bei MERYA DESIGNS</h2>
-            <p>Individuelle Hochzeitsgastgeschenke mit Eleganz und Stil.</p>
+            <h2>Willkommen bei MERYA DESIGNS 🌸</h2>
+            <p>Individuelle Hochzeitsgastgeschenke mit Eleganz und Stil. 🌿</p>
         </section>
         <section id="leistungen">
-            <h2>Unsere Leistungen</h2>
-            <p>Wir gestalten hochwertige und personalisierte Geschenke für deine Hochzeit mit Liebe zum Detail.</p>
+            <h2>Unsere Leistungen 🌼</h2>
+            <p>Wir gestalten hochwertige und personalisierte Geschenke für deine Hochzeit mit Liebe zum Detail. 🌷</p>
         </section>
         <section id="shop">
-            <h2>Shop</h2>
+            <h2>Shop 🌸</h2>
             <div class="shop-container">
                 <div class="shop-item">
-                    <h3>Gastgeschenk 1</h3>
+                    <h3>Gastgeschenk 1 🌹</h3>
                     <p>Preis: 10€</p>
                     <button>Kaufen</button>
                 </div>
                 <div class="shop-item">
-                    <h3>Gastgeschenk 2</h3>
+                    <h3>Gastgeschenk 2 🌻</h3>
                     <p>Preis: 15€</p>
                     <button>Kaufen</button>
                 </div>
             </div>
         </section>
         <section id="ueber-uns">
-            <h2>Über Uns</h2>
-            <p>MERYA DESIGNS steht für exklusive, stilvolle und personalisierte Hochzeitsgeschenke.</p>
+            <h2>Über Uns 🌺</h2>
+            <p>MERYA DESIGNS steht für exklusive, stilvolle und personalisierte Hochzeitsgeschenke. 💐</p>
         </section>
         <section id="kontakt">
-            <h2>Kontakt</h2>
+            <h2>Kontakt 🌸</h2>
             <p>Email: meryadesigns@gmail.de</p>
         </section>
     </div>
