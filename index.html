@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merya Designs</title>
+    <title>MERYA DESIGNS</title>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -11,19 +11,35 @@
             padding: 0;
             background-color: #FAF3E0;
             color: #2E604A;
+            display: flex;
+            flex-direction: row;
         }
         header {
             background-color: #2E604A;
             color: white;
             padding: 20px;
             text-align: center;
-            font-size: 24px;
+            font-size: 30px;
+            flex: 1;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header::after {
+            content: "🦋";
+            position: absolute;
+            top: 0;
+            right: 10px;
+            font-size: 20px;
         }
         nav {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: flex-start;
             background-color: #A3B18A;
             padding: 15px;
+            width: 200px;
             gap: 20px;
         }
         nav a {
@@ -39,6 +55,7 @@
         section {
             padding: 50px 20px;
             text-align: center;
+            flex: 3;
         }
         .shop-container {
             display: flex;
@@ -76,13 +93,13 @@
             color: white;
             text-align: center;
             padding: 15px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Merya Designs</h1>
-    </header>
     <nav>
         <a href="#start">Startseite</a>
         <a href="#leistungen">Leistungen</a>
@@ -90,39 +107,47 @@
         <a href="#ueber-uns">Über Uns</a>
         <a href="#kontakt">Kontakt</a>
     </nav>
-    <section id="start">
-        <h2>Willkommen bei Merya Designs</h2>
-        <p>Individuelle Hochzeitsgastgeschenke mit Eleganz und Stil.</p>
-    </section>
-    <section id="leistungen">
-        <h2>Unsere Leistungen</h2>
-        <p>Wir gestalten hochwertige und personalisierte Geschenke für deine Hochzeit mit Liebe zum Detail.</p>
-    </section>
-    <section id="shop">
-        <h2>Shop</h2>
-        <div class="shop-container">
-            <div class="shop-item">
-                <h3>Gastgeschenk 1</h3>
-                <p>Preis: 10€</p>
-                <button>Kaufen</button>
+
+    <div style="flex: 1; display: flex; flex-direction: column;">
+        <header>
+            <h1>MERYA DESIGNS</h1>
+        </header>
+
+        <section id="start">
+            <h2>Willkommen bei MERYA DESIGNS</h2>
+            <p>Individuelle Hochzeitsgastgeschenke mit Eleganz und Stil.</p>
+        </section>
+        <section id="leistungen">
+            <h2>Unsere Leistungen</h2>
+            <p>Wir gestalten hochwertige und personalisierte Geschenke für deine Hochzeit mit Liebe zum Detail.</p>
+        </section>
+        <section id="shop">
+            <h2>Shop</h2>
+            <div class="shop-container">
+                <div class="shop-item">
+                    <h3>Gastgeschenk 1</h3>
+                    <p>Preis: 10€</p>
+                    <button>Kaufen</button>
+                </div>
+                <div class="shop-item">
+                    <h3>Gastgeschenk 2</h3>
+                    <p>Preis: 15€</p>
+                    <button>Kaufen</button>
+                </div>
             </div>
-            <div class="shop-item">
-                <h3>Gastgeschenk 2</h3>
-                <p>Preis: 15€</p>
-                <button>Kaufen</button>
-            </div>
-        </div>
-    </section>
-    <section id="ueber-uns">
-        <h2>Über Uns</h2>
-        <p>Merya Designs steht für exklusive, stilvolle und personalisierte Hochzeitsgeschenke.</p>
-    </section>
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <p>Email: meryadesigns@gmail.com</p>
-    </section>
+        </section>
+        <section id="ueber-uns">
+            <h2>Über Uns</h2>
+            <p>MERYA DESIGNS steht für exklusive, stilvolle und personalisierte Hochzeitsgeschenke.</p>
+        </section>
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Email: meryadesigns@gmail.de</p>
+        </section>
+    </div>
     <footer>
-        <p>&copy; 2025 Merya Designs. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2025 MERYA DESIGNS. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
 </html>
+
